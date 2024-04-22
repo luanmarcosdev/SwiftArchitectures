@@ -1,14 +1,14 @@
 //
-//  LoginCoordinator.swift
+//  RegisterCoordinator.swift
 //  MVVM-C
 //
-//  Created by Luan Arruda on 19/04/24.
+//  Created by Luan Arruda on 22/04/24.
 //
 
 import Foundation
 import UIKit
 
-class LoginCoordinator: CoordinatorProtocol {
+class RegisterCoordinator: CoordinatorProtocol {
     
     var navigationController: UINavigationController
     
@@ -17,14 +17,10 @@ class LoginCoordinator: CoordinatorProtocol {
     }
     
     func start() {
-        let vc = LoginViewController()
+        let vc = RegisterViewController()
         vc.coordinator = self
         self.navigationController.pushViewController(vc, animated: true)
     }
     
-    func tappedRegisterButton() {
-        let registerCoordinator = RegisterCoordinator(navigationController: self.navigationController)
-        registerCoordinator.start()
-    }
     
 }

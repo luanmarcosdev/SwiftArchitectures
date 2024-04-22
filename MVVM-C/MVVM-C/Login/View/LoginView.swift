@@ -7,7 +7,20 @@
 
 import UIKit
 
+protocol LoginViewDelegate: AnyObject {
+    func loginAction()
+    func registerAction()
+}
+
 class LoginView: UIView {
+    
+    //MARK: Delegate
+    
+    private var delegate: LoginViewDelegate?
+    
+    public func setDelegate(delegate: LoginViewDelegate) {
+        self.delegate = delegate
+    }
     
     //MARK: - Properts
     
@@ -63,6 +76,7 @@ class LoginView: UIView {
         bt.layer.cornerRadius = 10
         bt.backgroundColor = .gray
         bt.tintColor = .white
+        bt.addTarget(self, action: #selector(tappedLoginButton), for: .touchUpInside)
         return bt
     }()
     
@@ -73,8 +87,19 @@ class LoginView: UIView {
         bt.layer.cornerRadius = 10
         bt.backgroundColor = .gray
         bt.tintColor = .white
+        bt.addTarget(self, action: #selector(tappedRegisterButton), for: .touchUpInside)
         return bt
     }()
+    
+    //MARK: - Actions
+    
+    @objc private func tappedLoginButton() {
+        self.delegate?.loginAction()
+    }
+    
+    @objc private func tappedRegisterButton() {
+        self.delegate?.registerAction()
+    }
     
     //MARK: - Initializers
 
