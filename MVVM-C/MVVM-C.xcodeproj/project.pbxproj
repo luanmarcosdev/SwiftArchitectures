@@ -18,7 +18,10 @@
 		CA28DC792BD6C98700891B3A /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA28DC782BD6C98700891B3A /* UITextFieldExtension.swift */; };
 		CA28DC7F2BD6D18E00891B3A /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA28DC7E2BD6D18E00891B3A /* RegisterCoordinator.swift */; };
 		CA28DC822BD6D1D500891B3A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA28DC812BD6D1D500891B3A /* RegisterViewController.swift */; };
-		CAA4FE3A2BD7EBCF00A31035 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA4FE392BD7EBCF00A31035 /* UserViewModel.swift */; };
+		CAA4FE3A2BD7EBCF00A31035 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA4FE392BD7EBCF00A31035 /* RegisterViewModel.swift */; };
+		CAB222352BDB193400B17F37 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB222342BDB193400B17F37 /* UserModel.swift */; };
+		CAB222372BDB197B00B17F37 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB222362BDB197B00B17F37 /* RegisterView.swift */; };
+		CAB222392BDB1BB500B17F37 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB222382BDB1BB500B17F37 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +38,10 @@
 		CA28DC782BD6C98700891B3A /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 		CA28DC7E2BD6D18E00891B3A /* RegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
 		CA28DC812BD6D1D500891B3A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		CAA4FE392BD7EBCF00A31035 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		CAA4FE392BD7EBCF00A31035 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		CAB222342BDB193400B17F37 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		CAB222362BDB197B00B17F37 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		CAB222382BDB1BB500B17F37 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,7 @@
 				CA28DC7B2BD6CE8800891B3A /* Utils */,
 				CA0FEA4F2BD29ACA006985CC /* Source */,
 				CA0FEA4C2BD29A62006985CC /* Coordinators */,
+				CAB222332BDB190D00B17F37 /* Models */,
 				CAA4FE382BD7EB6E00A31035 /* ViewModels */,
 				CA0FEA522BD29E1E006985CC /* Login */,
 				CA28DC7C2BD6D12200891B3A /* Register */,
@@ -120,6 +127,7 @@
 		CA28DC7C2BD6D12200891B3A /* Register */ = {
 			isa = PBXGroup;
 			children = (
+				CAB222362BDB197B00B17F37 /* RegisterView.swift */,
 				CA28DC812BD6D1D500891B3A /* RegisterViewController.swift */,
 			);
 			path = Register;
@@ -128,9 +136,18 @@
 		CAA4FE382BD7EB6E00A31035 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				CAA4FE392BD7EBCF00A31035 /* UserViewModel.swift */,
+				CAB222382BDB1BB500B17F37 /* LoginViewModel.swift */,
+				CAA4FE392BD7EBCF00A31035 /* RegisterViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CAB222332BDB190D00B17F37 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CAB222342BDB193400B17F37 /* UserModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,13 +223,16 @@
 				CA28DC822BD6D1D500891B3A /* RegisterViewController.swift in Sources */,
 				CA0FEA542BD29E7F006985CC /* LoginViewController.swift in Sources */,
 				CA28DC772BD6C1BF00891B3A /* LoginView.swift in Sources */,
-				CAA4FE3A2BD7EBCF00A31035 /* UserViewModel.swift in Sources */,
+				CAA4FE3A2BD7EBCF00A31035 /* RegisterViewModel.swift in Sources */,
 				CA28DC792BD6C98700891B3A /* UITextFieldExtension.swift in Sources */,
 				CA0FEA4E2BD29A7E006985CC /* CoordinatorProtocol.swift in Sources */,
 				CA0FEA512BD29C72006985CC /* LoginCoordinator.swift in Sources */,
 				CA28DC7F2BD6D18E00891B3A /* RegisterCoordinator.swift in Sources */,
+				CAB222392BDB1BB500B17F37 /* LoginViewModel.swift in Sources */,
 				CA0FEA392BD29914006985CC /* AppDelegate.swift in Sources */,
+				CAB222372BDB197B00B17F37 /* RegisterView.swift in Sources */,
 				CA0FEA3B2BD29914006985CC /* SceneDelegate.swift in Sources */,
+				CAB222352BDB193400B17F37 /* UserModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "19717986-01A5-43EC-B297-99813AAAFBAA"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8A5BDD0C-4FFF-42F8-ADC8-7CA4CF09C12E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVM-C/Register/RegisterViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "registerAction()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8A5BDD0C-4FFF-42F8-ADC8-7CA4CF09C12E - 453fa660edbc435d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MVVM_C.RegisterViewController.registerAction() -&gt; ()"
+                  moduleName = "MVVM-C"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luanarruda/Documents/SoftwareArchitecture/MVVM-C/MVVM-C/Register/RegisterViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "1036">
+               </Location>
+               <Location
+                  uuid = "8A5BDD0C-4FFF-42F8-ADC8-7CA4CF09C12E - 453fa660edbc437c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MVVM_C.RegisterViewController.registerAction() -&gt; ()"
+                  moduleName = "MVVM-C"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luanarruda/Documents/SoftwareArchitecture/MVVM-C/MVVM-C/Register/RegisterViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

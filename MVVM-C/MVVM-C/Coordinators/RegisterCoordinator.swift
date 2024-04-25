@@ -22,5 +22,9 @@ class RegisterCoordinator: CoordinatorProtocol {
         self.navigationController.pushViewController(vc, animated: true)
     }
     
+    func tappedRegisterButton() {
+        self.navigationController.popViewController(animated: true)
+    }
+    
     
 }

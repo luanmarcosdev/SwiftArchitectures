@@ -11,6 +11,7 @@ class LoginViewController: UIViewController {
     
     var coordinator: LoginCoordinator?
     var loginView: LoginView?
+    var loginViewModel: LoginViewModel?
     
     override func loadView() {
         self.loginView = LoginView()
@@ -27,7 +28,8 @@ class LoginViewController: UIViewController {
 extension LoginViewController: LoginViewDelegate {
     
     func loginAction() {
-        print("login")
+        self.loginViewModel = LoginViewModel()
+        loginViewModel?.authLogin(email: loginView?.emailTextField.text ?? "", password: loginView?.passwordTextField.text ?? "")
     }
     
     func registerAction() {
